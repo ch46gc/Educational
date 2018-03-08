@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Educational</string>
+    <string name="a_1980">a) 1980</string>
+    <string name="score">Score</string>
+    <string name="submit">Submit</string>
+    <string name="name">Text to display</string>
+    <string name="checkBox1">Answer checkBox1</string>
+    <string name="checkBox2">Answer checkBox2</string>
+    <string name="checkBox3">Answer checkBox3</string>
+    <string name="checkBox4">Answer checkBox4</string>
+    <string name="checkBo5">Answer checkBox5</string>
+    <string name="checkBox6">Answer checkBox6</string>
+    <string name="radioButton1">Answer radioButton1</string>
+    <string name="radioButton2">Answer radioButton2</string>
+    <string name="radioButton3">Answer radioButton3</string>
+    <string name="radioButton4">Answer radioButton4</string>
+    <string name="radioButton5">Answer radioButton5</string>
+    <string name="radioButton6">Answer radioButton6</string>
+    <string name="c_1960">c) 1960</string>
+    <string name="b_1970">b)1970</string>
+    <string name="a_snurfer">a) Snurfer</string>
+    <string name="b_skis">b) Skis</string>
+    <string name="c_monoski">c) Monoski</string>
+    <string name="a_sugarbush_resort">a) SugarBush Resort</string>
+    <string name="b_stratton_mountain_resort">b) Stratton Mountain Resort</string>
+    <string name="c_squaw_valley_resort">c) Squaw Valley Resort</string>
+    <string name="a_5">a) 5</string>
+    <string name="b_6">b) 6</string>
+    <string name="c_7">c) 7</string>
+
+
+</resources>

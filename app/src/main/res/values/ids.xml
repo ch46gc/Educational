@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="a_1980" type="id" />
+    <item name="c_1960" type="id" />
+    <item name="score_text_view" type="id" />
+</resources>
