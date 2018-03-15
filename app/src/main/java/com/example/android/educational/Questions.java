@@ -41,5 +41,5 @@ public class Questions extends AppCompatActivity {
                 " b) 6 ",
         };
     }
-}
 
+}

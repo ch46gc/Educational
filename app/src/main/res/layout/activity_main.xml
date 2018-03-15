@@ -121,10 +121,9 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="3) The 1998 Winter Olympics  were the first to include snowboarding. What country were they held in?"
+            android:text="3)The 1998 winter olympics were the first to include snowboarding what country were they held in?"
             android:textColor="#000000"
             android:textStyle="bold" />
-
 
 
         <EditText
@@ -199,6 +198,9 @@
             android:inputType="textCapWords"
             android:onClick="editText2" />
 
+
+
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
@@ -264,7 +266,7 @@
             android:paddingTop="6dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:text="score"
+            android:text="@string/score"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
             android:textSize="20sp"/>
@@ -285,9 +287,17 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:onClick="reset"
-            android:text="Reset" />
+            android:text="@string/reset" />
 
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:onClick="submit"
+            android:text="@string/submit"/>
 
 
 

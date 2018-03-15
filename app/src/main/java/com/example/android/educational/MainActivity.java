@@ -9,9 +9,6 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-
-
 import android.text.Editable;
 import android.view.Gravity;
 import android.view.View;
@@ -47,112 +44,103 @@ public class MainActivity extends AppCompatActivity {
     int scoreEditText2 = 0;
     int count = 0;
 
-    int rightAnswers = 0;
-    int total = 12; //total number of questions
-    int point = 1; //Points per correct answer
-    int score = total * point; //equation for  score
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        getSupportActionBar().hide(); //<< this
-        setContentView(R.layout.activity_main);
 
+
+
+              @Override
+              protected void onCreate(Bundle savedInstanceState) {
+              super.onCreate(savedInstanceState);
+              getSupportActionBar().hide(); //<< this
+              setContentView(R.layout.activity_main);
+              }
+
+             public void checkBox1Clicked(View view) {
+                 //Will check if this checkbox is checked and incorrect.
+                 //Shows if the user selected incorrect answer "a) 1980".
+                 //It will also show a red pop up box with toast message incorrect .
+                 if (count == 0) {
+                     System.out.println("Incorrect");
+                     System.out.println("0");
+                     displayScore(count);
+
+                     Toast toast = new Toast(getApplicationContext());
+                     toast.setGravity(Gravity.CENTER, 0, 0);
+
+                     TextView textView = new TextView(MainActivity.this);
+                     textView.setBackgroundColor(Color.RED);
+                     textView.setTextColor(Color.WHITE);
+                     textView.setTextSize(32);
+
+                     Typeface t = Typeface.create("serif", Typeface.BOLD);
+                     textView.setTypeface(t);
+                     textView.setPadding(40, 40, 40, 40);
+                     textView.setText(" INCORRECT ");
+                     toast.setView(textView);
+                     toast.show();
+
+                 }
+
+             }
+
+              private void displayForCheckBox1() {
+                TextView scoreView = findViewById(R.id.a_1980);
+                scoreView.setText(String.valueOf(0));
+                count = count - 1;
 
     }
 
-    public void increment(View view) {
-        if (count == 10) {
-            return;
+            public void checkBox2Clicked(View v) {
+            //Will check if this checkbox is checked and incorrect.
+            //Shows if the user selected correct answer "b) 1970".
+           //It will also show a red pop up box with toast message incorrect .
+              if (count == 0) {
+              System.out.println("Incorrect");
+              System.out.println("0");
+              displayScore(count);
+
+              Toast toast = new Toast(getApplicationContext());
+              toast.setGravity(Gravity.CENTER, 0, 0);
+
+              TextView textView = new TextView(MainActivity.this);
+              textView.setBackgroundColor(Color.RED);
+              textView.setTextColor(Color.WHITE);
+              textView.setTextSize(32);
+
+              Typeface t = Typeface.create("serif", Typeface.BOLD);
+              textView.setTypeface(t);
+              textView.setPadding(40, 40, 40, 40);
+              textView.setText(" INCORRECT ");
+              toast.setView(textView);
+              toast.show();
+
+              }
+    }
+
+
+           private void displayForCheckBox2(int score) {
+           TextView scoreView = findViewById(R.id.checkBox2);
+           scoreView.setText(String.valueOf(score));
+           count = count - 1;
+    }
+
+           public void checkBox3Clicked(View v) {
+          //Will check if this checkbox is checked and correct will give a point.
+          //Shows if the user selected correct answer "c) 1960".
+         //It will also show a green pop up box with toast message correct .
+           CheckBox checkBox = (CheckBox) v;
+
+             if (checkBox.isChecked()) {
+                 count = count + 1;
+
+               } else {
+
+              count = count - 1;
+
         }
-        count = count + 1;
-        displayScore(count);
+             displayScore(count);
 
-
-    }
-
-    public void decrement(View view) {
-        if (count != 1) {
-            return;
-        }
-        count = count - 1;
-        displayScore(count);
-
-
-    }
-
-
-    public void checkBox1Clicked(View view) {
-        //Will check if this checkbox is checked.
-        //Shows if the user selected incorrect answer "a) 1980".
-
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
-
-        TextView textView = new TextView(MainActivity.this);
-        textView.setBackgroundColor(Color.RED);
-        textView.setTextColor(Color.WHITE);
-        textView.setTextSize(32);
-
-        Typeface t = Typeface.create("serif", Typeface.BOLD);
-        textView.setTypeface(t);
-        textView.setPadding(40, 40, 40, 40);
-        textView.setText(" INCORRECT ");
-        toast.setView(textView);
-        toast.show();
-
-        displayScore(count);
-
-
-    }
-
-    public void displayForCheckBox1() {
-        TextView scoreView = findViewById(R.id.a_1980);
-        scoreView.setText(String.valueOf(0));
-        count = count - 1;
-
-    }
-
-    public void checkBox2Clicked(View v) {
-        //Will check if this checkbox is checked.
-        //Shows if the user selected correct answer "b) 1970".
-
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
-
-        TextView textView = new TextView(MainActivity.this);
-        textView.setBackgroundColor(Color.RED);
-        textView.setTextColor(Color.WHITE);
-        textView.setTextSize(32);
-
-        Typeface t = Typeface.create("serif", Typeface.BOLD);
-        textView.setTypeface(t);
-        textView.setPadding(40, 40, 40, 40);
-        textView.setText(" INCORRECT ");
-        toast.setView(textView);
-        toast.show();
-
-        displayScore(count);
-
-
-    }
-
-    public void displayForCheckBox2(int score) {
-        TextView scoreView = findViewById(R.id.checkBox2);
-        scoreView.setText(String.valueOf(score));
-        count = count - 1;
-    }
-
-    public void checkBox3Clicked(View v) {
-        //Will check if this checkbox is checked.
-        //Shows if the user selected correct answer "c) 1960".
-        scoreCheckBox3 = scoreCheckBox3 + 3;
-        if (count == 7) {
-            return;
-        }
-        count = count + 1;
-        displayScore(count);
 
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -171,7 +159,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void displayForCheckBox3(int score) {
+
+        private void displayForCheckBox3(int score) {
         TextView scoreView = findViewById(R.id.checkBox3);
         scoreView.setText(String.valueOf(score));
         count = count + 1;
@@ -181,7 +170,8 @@ public class MainActivity extends AppCompatActivity {
     public void radioButton1Clicked(View view) {
         //Will check if this radiobutton is checked.
         //Shows if the user selected the correct answer "a) Snurfer.
-        scoreRadioButton1 = scoreRadioButton1 + 3;
+        //It will also show a green pop up box with toast message correct .
+        scoreRadioButton1 = scoreRadioButton1 + 1;
         if (count == 7) {
             return;
         }
@@ -205,48 +195,64 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void displayForRadioButton1(int score) {
-        TextView scoreView = findViewById(R.id.radioButton1);
-        scoreView.setText(String.valueOf(score));
-        count = count + 1;
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
+         private void displayForRadioButton1(int score) {
+         TextView scoreView = findViewById(R.id.radioButton1);
+         scoreView.setText(String.valueOf(score));
+         count = count + 1;
+         Toast toast = new Toast(getApplicationContext());
+         toast.setGravity(Gravity.CENTER, 0, 0);
 
+         }
+
+         public void radioButton2Clicked(View view) {
+         //Will check if this radiobutton is checked and incorrect.
+         // Shows if the user selected incorrect answer "b) Skis".
+         //It will also show a red pop up box with toast message incorrect .
+          if (count == 0) {
+            return;
+        }
+         count = count - 1;
+         displayScore(count);
+         System.out.println("Incorrect");
+         System.out.println("0");
+
+         Toast toast = new Toast(getApplicationContext());
+         toast.setGravity(Gravity.CENTER, 0, 0);
+
+         TextView textView = new TextView(MainActivity.this);
+         textView.setBackgroundColor(Color.RED);
+         textView.setTextColor(Color.WHITE);
+         textView.setTextSize(32);
+
+         Typeface t = Typeface.create("serif", Typeface.BOLD);
+         textView.setTypeface(t);
+         textView.setPadding(40, 40, 40, 40);
+         textView.setText(" INCORRECT ");
+         toast.setView(textView);
+         toast.show();
 
     }
 
-    public void radioButton2Clicked(View view) {
-        //Will check if this radiobutton is checked.
-        // Shows if the user selected incorrect answer "b) Skis".
-
-        displayScore(count);
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
-
-        TextView textView = new TextView(MainActivity.this);
-        textView.setBackgroundColor(Color.RED);
-        textView.setTextColor(Color.WHITE);
-        textView.setTextSize(32);
-
-        Typeface t = Typeface.create("serif", Typeface.BOLD);
-        textView.setTypeface(t);
-        textView.setPadding(40, 40, 40, 40);
-        textView.setText(" INCORRECT ");
-        toast.setView(textView);
-        toast.show();
-
+       private void displayForRadioButton2(int score) {
+         TextView scoreView = findViewById(R.id.radioButton2);
+         scoreView.setText(String.valueOf(score));
+         count = count - 1;
+         Toast toast = new Toast(getApplicationContext());
+         toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
-    public void displayForRadioButton2(int score) {
-        TextView scoreView = findViewById(R.id.radioButton2);
-        scoreView.setText(String.valueOf(score));
-        count = count - 1;
-    }
-
-    public void radioButton3Clicked(View v) {
-        //Will check if this radiobutton is checked.
+      public void radioButton3Clicked(View v) {
+        //Will check if this radiobutton is checked and incorrect.
         //Shows if the user selected incorrect answer " c) Monoski".
+        //It will also show a red pop up box with toast message incorrect .
+        if (count == 0) {
+            return;
+        }
+        count = count - 1;
         displayScore(count);
+        System.out.println("Incorrect");
+        System.out.println("0");
+
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
 
@@ -264,18 +270,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void displayForRadioButton3(int score) {
+    private void displayForRadioButton3(int score) {
         TextView scoreView = findViewById(R.id.radioButton3);
         scoreView.setText(String.valueOf(score));
         count = count - 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
 
     public void checkBox4Clicked(View v) {
-        // Will Check of this checkbox is checked.
-        // shows if the user selected the incorrect  answer "a) Sugarbush Resort"
-
+        // Will Check of this checkbox is checked and incorrect.
+        //Shows if the user selected the incorrect  answer "a) Sugarbush Resort"
+        //It will also show a red pop up box with toast message incorrect .
+        if (count == 0) {
+            return;
+        }
+        count = count - 1;
         displayScore(count);
+        System.out.println("Incorrect");
+        System.out.println("0");
 
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -293,19 +307,20 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-
-    public void displayForCheckBox4(int score) {
+    private void displayForCheckBox4(int score) {
         TextView scoreView = findViewById(R.id.checkBox4);
         scoreView.setText(String.valueOf(score));
         count = count - 1;
-
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
 
     public void checkBox5Clicked(View v) {
-        // Will Check of this checkbox is checked.
+        // Will Check if this checkbox is checked and correct will give one point.
         // shows if the user selected the correct answer " b) Stratton Mountain Resort"
-        scoreCheckBox5 = scoreCheckBox5 + 3;
+        //It will also show a green pop up box with toast message correct .
+        scoreCheckBox5 = scoreCheckBox5 + 1;
         if (count == 7) {
             return;
 
@@ -313,7 +328,7 @@ public class MainActivity extends AppCompatActivity {
         }
         count = count + 1;
         displayScore(count);
-        Toast.makeText(this, " You are doing Great!", Toast.LENGTH_SHORT).show();
+
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
 
@@ -332,17 +347,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void displayForCheckBox5(int score) {
+    private void displayForCheckBox5(int score) {
         TextView scoreView = findViewById(R.id.checkBox5);
         scoreView.setText(String.valueOf(score));
         count = count + 1;
     }
 
     public void checkBox6Clicked(View v) {
-        // Will Check of this checkbox is checked.
+        // Will Check of this checkbox is checked and incorrect.
         // shows if the user selected the incorrect answer " c) Squaw Valley Resort"
-
+        //It will also show a red pop up box with toast message incorrect .
+        if (count == 0) {
+            return;
+        }
+        count = count - 1;
         displayScore(count);
+        System.out.println("Incorrect");
+        System.out.println("0");
+
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
 
@@ -360,16 +382,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void displayForCheckBox6(int score) {
+    private void displayForCheckBox6(int score) {
         TextView scoreView = findViewById(R.id.checkBox6);
         scoreView.setText(String.valueOf(score));
         count = count - 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
 
     }
 
     public void radioButton4Clicked(View v) {
-        //Will check if this radiobutton is checked.
+        //Will check if this radiobutton is checked and incorrect.
         // Shows if the user selected incorrect "a) 5 "
+        //It will also show a red pop up box with toast message incorrect .
+        if (count == 0) {
+            return;
+        }
+        count = count - 1;
+        displayScore(count);
+        System.out.println("Incorrect");
+        System.out.println("0");
 
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -385,21 +417,21 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(" INCORRECT ");
         toast.setView(textView);
         toast.show();
-
-        displayScore(count);
-
     }
 
-    public void displayForRadioButton4(int score) {
+    private void displayForRadioButton4(int score) {
         TextView scoreView = findViewById(R.id.radioButton4);
         scoreView.setText(String.valueOf(score));
         count = count - 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
     public void radioButton5Clicked(View v) {
-        //Will check if this radiobutton is checked.
+        //Will check if this radiobutton is checked and correct will give one point.
         // Shows if the user selected correct "b) 6 "
-        scoreRadioButton5 = scoreRadioButton5 + 3;
+        //It will also show a green pop up box with toast message correct .
+        scoreRadioButton5 = scoreRadioButton5 + 1;
         if (count == 7) {
             return;
         }
@@ -423,15 +455,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void displayForRadioButton5(int score) {
+    private void displayForRadioButton5(int score) {
         TextView scoreView = findViewById(R.id.radioButton5);
         scoreView.setText(String.valueOf(score));
-        count = count - 1;
+        count = count + 1;
     }
 
     public void radioButton6Clicked(View v) {
-        //Will check if this radiobutton is checked.
-        // Shows if the user selected correct "c) 7 "
+        //Will check if this radiobutton is checked and incorrect.
+        // Shows if the user selected incorrect "c) 7 "
+        //It will also show a red pop up box with toast message incorrect .
+        if (count == 0) {
+            return;
+        }
+        count = count - 1;
+        displayScore(count);
+        System.out.println("Incorrect");
+        System.out.println("0");
 
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -448,57 +488,140 @@ public class MainActivity extends AppCompatActivity {
         toast.setView(textView);
         toast.show();
 
-        displayScore(count);
-
-
     }
 
-    public void displayForRadioButton6(int score) {
+    private void displayForRadioButton6(int score) {
         TextView scoreView = findViewById(R.id.radioButton6);
         scoreView.setText(String.valueOf(score));
         count = count - 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
+
     }
+    /**
+     * This will show if the user answered correctly "Japan" and give +1 point or deduct 1 point if incorrect. It will also show a red pop
+     * up box with toast message incorrect or green pop up with toast message correct.
+     */
+    public void editText1(View view) {
+        // Will check if the editText1 is "Japan" the correct answer and give one point.
+        String correctAnswer = "Japan";
+        EditText quantityCorrect = (EditText) findViewById(R.id.editText1);
+        if (quantityCorrect.getText().toString().trim().equalsIgnoreCase(correctAnswer)) {
+            count = count + 1;
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER, 0, 0);
 
-              public void editText1(View view) {
+            TextView textView = new TextView(MainActivity.this);
+            textView.setBackgroundColor(Color.GREEN);
+            textView.setTextColor(Color.WHITE);
+            textView.setTextSize(32);
 
+            Typeface t = Typeface.create("serif", Typeface.BOLD);
+            textView.setTypeface(t);
+            textView.setPadding(40, 40, 40, 40);
+            textView.setText("CORRECT !");
+            toast.setView(textView);
+            toast.show();
 
-                scoreEditText1 = scoreEditText1 + 1;
-                if (count == 7) {
+        } else {
+            count = count - 1;
+            System.out.println("Incorrect");
+            System.out.println("0");
 
-            return;
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER, 0, 0);
+
+            TextView textView = new TextView(MainActivity.this);
+            textView.setBackgroundColor(Color.RED);
+            textView.setTextColor(Color.WHITE);
+            textView.setTextSize(32);
+
+            Typeface t = Typeface.create("serif", Typeface.BOLD);
+            textView.setTypeface(t);
+            textView.setPadding(40, 40, 40, 40);
+            textView.setText(" INCORRECT ");
+            toast.setView(textView);
+            toast.show();
+
         }
-        count = count + 3;
         displayScore(count);
-        Toast.makeText(this, "Japan is  the correct answer.", Toast.LENGTH_LONG).show();
 
 
     }
 
-    public void displayForEditText1(int score) {
+
+    private void displayForEditText1(int score) {
         TextView scoreView = findViewById(R.id.editText1);
         scoreView.setText(String.valueOf(score));
-        count = count - 1;
+        count = count + 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
 
 
     }
+    /**
+     * This will show if the user answered correctly "Sherman Poppen" and give +1 point or deduct 1 point if incorrect. It will also show a red pop
+     * up box with toast message incorrect or green pop up with toast message correct.
+     */
 
     public void editText2(View view) {
-        scoreEditText2 = scoreEditText2 + 1;
-        if (count == 7) {
-            return;
+        String correctAnswer = "Sherman Poppen";
+        EditText quantityCorrect = (EditText) findViewById(R.id.editText2);
+        if (quantityCorrect.getText().toString().trim().equalsIgnoreCase(correctAnswer)) {
+            count = count + 1;
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER, 0, 0);
+
+            TextView textView = new TextView(MainActivity.this);
+            textView.setBackgroundColor(Color.GREEN);
+            textView.setTextColor(Color.WHITE);
+            textView.setTextSize(32);
+
+            Typeface t = Typeface.create("serif", Typeface.BOLD);
+            textView.setTypeface(t);
+            textView.setPadding(40, 40, 40, 40);
+            textView.setText("CORRECT !");
+            toast.setView(textView);
+            toast.show();
+
+
+        } else {
+
+            count = count - 1;
+            System.out.println("Incorrect");
+            System.out.println("0");
+
+
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER, 0, 0);
+
+            TextView textView = new TextView(MainActivity.this);
+            textView.setBackgroundColor(Color.RED);
+            textView.setTextColor(Color.WHITE);
+            textView.setTextSize(32);
+
+            Typeface t = Typeface.create("serif", Typeface.BOLD);
+            textView.setTypeface(t);
+            textView.setPadding(40, 40, 40, 40);
+            textView.setText(" INCORRECT ");
+            toast.setView(textView);
+            toast.show();
+
         }
-        count = count + 3;
-        displayScore(count);
-        Toast.makeText(this, "Sherman Poppen is  the correct answer.", Toast.LENGTH_LONG).show();
+           displayScore(count);
+
+
     }
 
-    public void displayForEditText2(int score) {
+
+    private void displayForEditText2(int score) {
         TextView scoreView = findViewById(R.id.editText2);
         scoreView.setText(String.valueOf(score));
-        count = count - 1;
+        count = count + 1;
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 0);
 
     }
-
     public void score(View view) {
 
         scoreCheckBox1 = 0;
@@ -586,14 +709,18 @@ public class MainActivity extends AppCompatActivity {
         RadioButton c7RadioButton = findViewById(R.id.radioButton6);
         boolean c6RadioButtonChecked = c7RadioButton.isChecked();
 
-        {
 
-            int score = calculateScore(hasA1980CheckBox1, hasB1970CheckBox2, c1960CheckBox3Checked,
-                    hasSnurferChecked, skisRadioButtonChecked, monoskiRadioButtonChecked, sugarbushResortCheckBox4Checked,
-                    strattonMountainResortCheckBox5Checked, squawValleyResortCheckBox6Checked, a4RadioButtonChecked, b5RadioButtonChecked,
-                    c6RadioButtonChecked);
-        }
+        int score = calculateScore(hasA1980CheckBox1, hasB1970CheckBox2, c1960CheckBox3Checked,
+                hasSnurferChecked, skisRadioButtonChecked, monoskiRadioButtonChecked, sugarbushResortCheckBox4Checked,
+                strattonMountainResortCheckBox5Checked, squawValleyResortCheckBox6Checked, a4RadioButtonChecked, b5RadioButtonChecked,
+                c6RadioButtonChecked);
+
+
+
     }
+
+
+
 
 
     private int calculateScore(boolean addA1980CheckBox1, boolean addB1970CheckBox2,
@@ -612,7 +739,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         while (score <= incorrect)
-            //Add 1 if user selects  A1980CheckBox1
+            //Add 0 if user selects  A1980CheckBox1
             if (addA1980CheckBox1) {
                 score += incorrect;
             } else {
@@ -620,7 +747,7 @@ public class MainActivity extends AppCompatActivity {
                 score -= incorrect;
             }
         while (score <= incorrect)
-            //Add 1 if user select B1970CheckBox2
+            //Add 0 if user select B1970CheckBox2
             if (addB1970CheckBox2) {
                 score += incorrect;
             } else {
@@ -697,12 +824,16 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value on the screen.
      */
     private void displayScore(int numberOfCorrect) {
-
         TextView quantityTextView = findViewById(R.id.score_text_view);
         quantityTextView.setText("" + numberOfCorrect);
 
+
     }
 
+    /**
+     * *
+     * @param view This will reset quiz and clear all activity
+     */
 
     public void reset(View view) {
         Intent i = getBaseContext().getPackageManager()
@@ -711,11 +842,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         Button button = findViewById(R.id.resetButton);
 
-
     }
 
+    /**
+     * Checking the result using the submit button
+     **/
 
+    public void submit(View view) {
+        Button submitButton = (Button) findViewById(R.id.button);
+        // Checks if "Japan" is the correct answer
+        Toast.makeText(MainActivity.this, "Excellent! You have done Great!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You really know your snowboard history", Toast.LENGTH_LONG).show();
 
-
+    }
 }
 

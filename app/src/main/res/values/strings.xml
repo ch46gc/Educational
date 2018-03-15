@@ -27,6 +27,7 @@
     <string name="a_5">a) 5</string>
     <string name="b_6">b) 6</string>
     <string name="c_7">c) 7</string>
+    <string name="reset">Reset</string>
 
 
 </resources>
