@@ -119,9 +119,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-           private void displayForCheckBox2(int score) {
+           private void displayForCheckBox2() {
            TextView scoreView = findViewById(R.id.checkBox2);
-           scoreView.setText(String.valueOf(score));
+           scoreView.setText(String.valueOf(0));
            count = count - 1;
     }
 
@@ -160,9 +160,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        private void displayForCheckBox3(int score) {
+        private void displayForCheckBox3() {
         TextView scoreView = findViewById(R.id.checkBox3);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count + 1;
     }
 
@@ -195,9 +195,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-         private void displayForRadioButton1(int score) {
+         private void displayForRadioButton1() {
          TextView scoreView = findViewById(R.id.radioButton1);
-         scoreView.setText(String.valueOf(score));
+         scoreView.setText(String.valueOf(0));
          count = count + 1;
          Toast toast = new Toast(getApplicationContext());
          toast.setGravity(Gravity.CENTER, 0, 0);
@@ -233,9 +233,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-       private void displayForRadioButton2(int score) {
+       private void displayForRadioButton2() {
          TextView scoreView = findViewById(R.id.radioButton2);
-         scoreView.setText(String.valueOf(score));
+         scoreView.setText(String.valueOf(0));
          count = count - 1;
          Toast toast = new Toast(getApplicationContext());
          toast.setGravity(Gravity.CENTER, 0, 0);
@@ -270,9 +270,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForRadioButton3(int score) {
+    private void displayForRadioButton3() {
         TextView scoreView = findViewById(R.id.radioButton3);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count - 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -307,9 +307,9 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private void displayForCheckBox4(int score) {
+    private void displayForCheckBox4() {
         TextView scoreView = findViewById(R.id.checkBox4);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count - 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -347,9 +347,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForCheckBox5(int score) {
+    private void displayForCheckBox5() {
         TextView scoreView = findViewById(R.id.checkBox5);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count + 1;
     }
 
@@ -382,9 +382,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForCheckBox6(int score) {
+    private void displayForCheckBox6() {
         TextView scoreView = findViewById(R.id.checkBox6);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count - 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -419,9 +419,9 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private void displayForRadioButton4(int score) {
+    private void displayForRadioButton4() {
         TextView scoreView = findViewById(R.id.radioButton4);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count - 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -455,9 +455,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForRadioButton5(int score) {
+    private void displayForRadioButton5() {
         TextView scoreView = findViewById(R.id.radioButton5);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count + 1;
     }
 
@@ -490,9 +490,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForRadioButton6(int score) {
+    private void displayForRadioButton6() {
         TextView scoreView = findViewById(R.id.radioButton6);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count - 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -550,9 +550,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForEditText1(int score) {
+    private void displayForEditText1() {
         TextView scoreView = findViewById(R.id.editText1);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count + 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -614,9 +614,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForEditText2(int score) {
+    private void displayForEditText2() {
         TextView scoreView = findViewById(R.id.editText2);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(0));
         count = count + 1;
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -639,19 +639,19 @@ public class MainActivity extends AppCompatActivity {
         scoreEditText1 = 0;
         scoreEditText2 = 0;
         displayForCheckBox1();
-        displayForCheckBox2(0);
-        displayForCheckBox3(0);
-        displayForCheckBox4(0);
-        displayForCheckBox5(0);
-        displayForCheckBox6(0);
-        displayForRadioButton1(0);
-        displayForRadioButton2(0);
-        displayForRadioButton3(0);
-        displayForRadioButton4(0);
-        displayForRadioButton5(0);
-        displayForRadioButton6(0);
-        displayForEditText1(0);
-        displayForEditText2(0);
+        displayForCheckBox2();
+        displayForCheckBox3();
+        displayForCheckBox4();
+        displayForCheckBox5();
+        displayForCheckBox6();
+        displayForRadioButton1();
+        displayForRadioButton2();
+        displayForRadioButton3();
+        displayForRadioButton4();
+        displayForRadioButton5();
+        displayForRadioButton6();
+        displayForEditText1();
+        displayForEditText2();
 
 
     }
@@ -717,10 +717,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     }
-
-
-
 
 
     private int calculateScore(boolean addA1980CheckBox1, boolean addB1970CheckBox2,
@@ -817,9 +815,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         return score;
-
     }
-
     /**
      * This method displays the given quantity value on the screen.
      */
@@ -849,11 +845,19 @@ public class MainActivity extends AppCompatActivity {
      **/
 
     public void submit(View view) {
+
         Button submitButton = (Button) findViewById(R.id.button);
-        // Checks if "Japan" is the correct answer
+
         Toast.makeText(MainActivity.this, "Excellent! You have done Great!", Toast.LENGTH_LONG).show();
         Toast.makeText(this, "You really know your snowboard history", Toast.LENGTH_LONG).show();
 
-    }
+
+
+
+
+
+
+        }
+
 }
 

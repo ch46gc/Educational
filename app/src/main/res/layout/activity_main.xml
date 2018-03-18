@@ -3,7 +3,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/snowboards">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,7 +24,8 @@
             android:paddingTop="4dp"
             android:text="1) What year was snowboarding invented?"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:id="@+id/checkBox1"
@@ -33,8 +34,14 @@
             android:onClick="checkBox1Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/a_1980" />
 
@@ -45,8 +52,14 @@
             android:onClick="checkBox2Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/b_1970" />
 
@@ -57,8 +70,14 @@
             android:onClick="checkBox3Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/c_1960" />
 
@@ -70,13 +89,16 @@
             android:paddingTop="4dp"
             android:text="2) Which of these are a predecessor of the snowboard?"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <RadioGroup
             android:id="@+id/radioGroup1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingRight="24dp"
+            android:paddingLeft="24dp">
 
 
             <RadioButton
@@ -85,11 +107,17 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButton1Clicked"
                 android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
-                android:textColor="#000000"
-                android:text="@string/a_snurfer" />
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/a_snurfer"
+                android:textColor="#000000" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
@@ -98,9 +126,15 @@
                 android:onClick="radioButton2Clicked"
                 android:paddingBottom="2dp"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
                 android:textColor="#000000"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
                 android:text="@string/b_skis" />
 
             <RadioButton
@@ -109,9 +143,15 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButton3Clicked"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
                 android:textColor="#000000"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
                 android:text="@string/c_monoski" />
         </RadioGroup>
 
@@ -123,7 +163,8 @@
             android:paddingTop="4dp"
             android:text="3)The 1998 winter olympics were the first to include snowboarding what country were they held in?"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
 
         <EditText
@@ -143,7 +184,8 @@
             android:paddingTop="4dp"
             android:text="4) Snowboarding was banned until the early 1980's at resorts. Which of these opened its slopes up to snowboarding in1983 - 1984 ?"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
         <CheckBox
             android:id="@+id/checkBox4"
@@ -152,8 +194,14 @@
             android:onClick="checkBox4Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/a_sugarbush_resort" />
 
@@ -164,8 +212,14 @@
             android:onClick="checkBox5Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/b_stratton_mountain_resort" />
 
@@ -176,8 +230,14 @@
             android:onClick="checkBox6Clicked"
             android:paddingBottom="2dp"
             android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:scaleY="1.50"
+            android:scaleX="1.50"
             android:textColor="#000000"
             android:text="@string/c_squaw_valley_resort" />
 
@@ -188,7 +248,8 @@
             android:layout_marginTop="13dp"
             android:text="5) Who was the father of snowboarding?"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="18sp"/>
 
 
         <EditText
@@ -209,14 +270,16 @@
             android:text="6) How many layers make up a snowboard construction sandwich?"
             android:textColor="#000000"
             android:textStyle="bold"
-            tools:text="TextView" />
+            tools:text="TextView"
+            android:textSize="18sp" />
 
 
         <RadioGroup
             android:id="@+id/radioGroup2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <RadioButton
                 android:id="@+id/radioButton4"
@@ -225,8 +288,14 @@
                 android:onClick="radioButton4Clicked"
                 android:paddingBottom="2dp"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="12dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
                 android:textColor="#000000"
                 android:text="@string/a_5" />
 
@@ -237,8 +306,14 @@
                 android:onClick="radioButton5Clicked"
                 android:paddingBottom="2dp"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
                 android:textColor="#000000"
                 android:text="@string/b_6" />
 
@@ -248,8 +323,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="radioButton6Clicked"
                 android:paddingTop="2dp"
-                android:paddingRight="10dp"
-                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
                 android:textColor="#000000"
                 android:text="@string/c_7" />
 
@@ -261,15 +342,18 @@
             android:id="@+id/score_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:layout_gravity="center"
-            android:paddingTop="6dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="6dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:paddingTop="6dp"
             android:text="@string/score"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -286,8 +370,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
             android:onClick="reset"
-            android:text="@string/reset" />
+            android:text="@string/reset"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
 
         <Button
@@ -295,9 +382,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
             android:onClick="submit"
-            android:text="@string/submit"/>
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/submit"
+            android:textStyle="bold" />
 
 
 
