@@ -848,10 +848,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button submitButton = (Button) findViewById(R.id.button);
 
-        Toast.makeText(MainActivity.this, "Excellent! You have done Great!", Toast.LENGTH_LONG).show();
-        Toast.makeText(this, "You really know your snowboard history", Toast.LENGTH_LONG).show();
+        if (count == 5){
+            Toast.makeText(MainActivity.this, "Excellent! You have done Great!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "You really know your snowboard history", Toast.LENGTH_LONG).show();
+        }
+      else if (count <= 1){
+            Toast.makeText(MainActivity.this, "Keep trying, you will get it!", Toast.LENGTH_LONG).show();
 
-
+        }
 
 
 
