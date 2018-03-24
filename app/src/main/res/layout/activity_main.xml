@@ -7,23 +7,25 @@
     android:background="@drawable/snowboards">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/educational"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
         tools:context="com.example.android.educational.MainActivity">
 
 
 
 
         <TextView
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="1) What year was snowboarding invented?"
+            android:text="@string/question_1_text"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"/>
@@ -94,7 +96,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="2) Which of these are a predecessor of the snowboard?"
+            android:text="@string/question_2_text"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"/>
@@ -174,7 +176,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="3)The 1998 winter olympics were the first to include snowboarding what country were they held in?"
+            android:text="@string/question_3_text"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"/>
@@ -185,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:inputType="textCapWords"
-            android:hint="Country"
+            android:hint="@string/country"
             android:onClick="editText1" />
 
 
@@ -195,7 +197,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
-            android:text="4) Snowboarding was banned until the early 1980's at resorts. Which of these opened its slopes up to snowboarding in1983 - 1984 ?"
+            android:text="@string/question_4_text"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"/>
@@ -265,7 +267,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
-            android:text="5) Who was the father of snowboarding?"
+            android:text="@string/question_5_text"
             android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="18sp"/>
@@ -286,7 +288,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
-            android:text="6) How many layers make up a snowboard construction sandwich?"
+            android:text="@string/question_6_text"
             android:textColor="#000000"
             android:textStyle="bold"
             tools:text="TextView"
@@ -380,14 +382,7 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-
-
-        </LinearLayout>
 
         <Button
             android:id="@+id/resetButton"
