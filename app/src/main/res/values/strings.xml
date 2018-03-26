@@ -32,9 +32,9 @@
     <string name="question_2_text">2) Which of these are a predecessor of the snowboard?</string>
     <string name="question_3_text">3)The 1998 winter olympics were the first to include snowboarding what country were they held in?</string>
     <string name="country">Country</string>
-    <string name="question_4_text">4) Snowboarding was banned until the early 1980\'s at resorts. Which of these opened its slopes up to snowboarding in1983 - 1984 ?</string>
+    <string name="question_4_text">4) Snowboarding was banned until the early 1980\'s at resorts. Which of these opened its slopes up to snowboarding in 1983 – 1984 ?</string>
     <string name="question_5_text">5) Who was the father of snowboarding?</string>
     <string name="question_6_text">6) How many layers make up a snowboard construction sandwich?</string>
-
-
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Incorrect</string>
 </resources>

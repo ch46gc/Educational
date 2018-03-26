@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); //<< this
         setContentView(R.layout.activity_main);
 
-
     }
 
     public void checkBox1Clicked(View view) {
@@ -64,12 +63,13 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
     }
     private void displayForCheckBox1() {
+
         TextView scoreView = findViewById(R.id.checkBox2);
         scoreView.setText(String.valueOf(0));
-
     }
 
        public void checkBox2Clicked(View v) {
@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         CheckBox checkBox = (CheckBox) v;
         if (checkBox.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
@@ -129,9 +128,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.radioButton1);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
-
     }
 
     public void radioButton2Clicked(View view) {
@@ -140,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         RadioButton radioButton = (RadioButton) view;
         if (radioButton.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
 
     }
@@ -153,8 +149,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.radioButton2);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
     public void radioButton3Clicked(View v) {
@@ -163,11 +157,11 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         RadioButton radioButton = (RadioButton) v;
         if (radioButton.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
 
     }
@@ -176,8 +170,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.radioButton3);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
+
     }
 
 
@@ -187,11 +180,11 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         CheckBox checkBox = (CheckBox) v;
         if (checkBox.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
 
     }
@@ -200,8 +193,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.checkBox4);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
+
     }
 
 
@@ -232,20 +224,18 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         CheckBox checkBox = (CheckBox) v;
         if (checkBox.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
-        }
+
+}
     }
 
     private void displayForCheckBox6() {
         TextView scoreView = findViewById(R.id.checkBox6);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
 
     }
 
@@ -255,11 +245,11 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         RadioButton radioButton = (RadioButton) v;
         if (radioButton.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
 
     }
@@ -268,8 +258,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.radioButton4);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
     }
 
     public void radioButton5Clicked(View v) {
@@ -298,11 +286,11 @@ public class MainActivity extends AppCompatActivity {
         //It will also show a red pop up box with toast message incorrect .
         RadioButton radioButton = (RadioButton) v;
         if (radioButton.isChecked()) {
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
             incorrectToast();
+
         }
     }
 
@@ -310,8 +298,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.radioButton6);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
 
     }
 
@@ -322,7 +308,7 @@ public class MainActivity extends AppCompatActivity {
     public void editText1(View view) {
         // Will check if the editText1 is "Japan" the correct answer and give one point.
         String correctAnswer = "Japan";
-        EditText quantityCorrect = (EditText) findViewById(R.id.editText1);
+        EditText quantityCorrect = findViewById(R.id.editText1);
         if (quantityCorrect.getText().toString().trim().equalsIgnoreCase(correctAnswer)) {
             count++;
             System.out.println("Correct");
@@ -330,10 +316,8 @@ public class MainActivity extends AppCompatActivity {
             displayScore(count);
             correctToast();
 
-
         } else {
 
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
@@ -348,8 +332,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.editText1);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
 
 
     }
@@ -361,7 +343,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void editText2(View view) {
         String correctAnswer = "Sherman Poppen";
-        EditText quantityCorrect = (EditText) findViewById(R.id.editText2);
+        EditText quantityCorrect = findViewById(R.id.editText2);
         if (quantityCorrect.getText().toString().trim().equalsIgnoreCase(correctAnswer)) {
             count++;
             System.out.println("Correct");
@@ -371,7 +353,6 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
 
-            count = 0;
             System.out.println("Incorrect");
             System.out.println("0");
             displayScore(count);
@@ -386,12 +367,10 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = findViewById(R.id.editText2);
         scoreView.setText(String.valueOf(0));
 
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER, 0, 0);
-
     }
 
     public void score(View view) {
+
         scoreCheckBox1 = 0;
         scoreCheckBox2 = 0;
         scoreCheckBox3 = 0;
@@ -422,6 +401,10 @@ public class MainActivity extends AppCompatActivity {
         displayForEditText2();
 
     }
+
+    /**
+     * This is a custom toast message, a green pop up box with a correct message.
+     */
     private void correctToast() {
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -434,11 +417,14 @@ public class MainActivity extends AppCompatActivity {
         Typeface t = Typeface.create("serif", Typeface.BOLD);
         textView.setTypeface(t);
         textView.setPadding(40, 40, 40, 40);
-        textView.setText("CORRECT !");
+        textView.setText(R.string.correct_toast);
         toast.setView(textView);
         toast.show();
     }
 
+    /**
+     * This is a custom toast message, a red pop up box with an incorrect message
+     */
     private void incorrectToast() {
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
@@ -451,7 +437,7 @@ public class MainActivity extends AppCompatActivity {
         Typeface t = Typeface.create("serif", Typeface.BOLD);
         textView.setTypeface(t);
         textView.setPadding(40, 40, 40, 40);
-        textView.setText(" INCORRECT ");
+        textView.setText(R.string.incorrect_toast);
         toast.setView(textView);
         toast.show();
     }
@@ -485,10 +471,10 @@ public class MainActivity extends AppCompatActivity {
      **/
 
     public void submit(View view) {
-        Button submitButton = (Button) findViewById(R.id.submit_button);
+        Button submitButton = findViewById(R.id.submit_button);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Your total score " + count + " points" + "\n The below are the correct answers  " + "\n  1) 1960 " +
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Your total score " + count + " points" + "\n The list below are the correct answers.  " + "\n  1) 1960 " +
                 "\n  2) Snurfer"
                 + "\n  3)Japan" + "\n  4) Stratton Mountain Resort" +
                 "\n  5) Sherman Poppen" + "\n  6) 6 " );
@@ -498,6 +484,7 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(MainActivity.this, "Excellent! You have done Great!", Toast.LENGTH_LONG).show();
             count++;
+
         }
 
     }
