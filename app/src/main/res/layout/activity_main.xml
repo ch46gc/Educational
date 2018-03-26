@@ -26,7 +26,7 @@
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
             android:text="@string/question_1_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -97,7 +97,7 @@
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
             android:text="@string/question_2_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -177,7 +177,7 @@
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
             android:text="@string/question_3_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -198,7 +198,7 @@
             android:paddingBottom="4dp"
             android:paddingTop="4dp"
             android:text="@string/question_4_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -268,7 +268,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
             android:text="@string/question_5_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
@@ -289,7 +289,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="13dp"
             android:text="@string/question_6_text"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             tools:text="TextView"
             android:textSize="18sp" />
