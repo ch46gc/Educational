@@ -28,20 +28,22 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreCheckBox1 = 0;
-    int scoreCheckBox2 = 0;
-    int scoreCheckBox3 = 0;
-    int scoreCheckBox4 = 0;
-    int scoreCheckBox5 = 0;
-    int scoreCheckBox6 = 0;
-    int scoreRadioButton1 = 0;
-    int scoreRadioButton2 = 0;
-    int scoreRadioButton3 = 0;
-    int scoreRadioButton4 = 0;
-    int scoreRadioButton5 = 0;
-    int scoreRadioButton6 = 0;
-    int scoreEditText1 = 0;
-    int scoreEditText2 = 0;
+    CheckBox checkBox1;
+    CheckBox checkBox2;
+    CheckBox checkBox3;
+    CheckBox checkBox4;
+    CheckBox checkBox5;
+    CheckBox checkBox6;
+    EditText editText1;
+    EditText editText2;
+    RadioButton radioButton1;
+    RadioButton radioButton2;
+    RadioButton radioButton3;
+    RadioButton radioButton4;
+    RadioButton radioButton5;
+    RadioButton radioButton6;
+    Button resetButton;
+    Button submitButton;
     int count = 0;
 
 
@@ -51,9 +53,28 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide(); //<< this
         setContentView(R.layout.activity_main);
 
+        checkBox1 = findViewById(R.id.checkBox1);
+        checkBox2 = findViewById(R.id.checkBox2);
+        checkBox3 = findViewById(R.id.checkBox3);
+        checkBox4 = findViewById(R.id.checkBox4);
+        checkBox5 = findViewById(R.id.checkBox5);
+        checkBox6 = findViewById(R.id.checkBox6);
+        radioButton1 = findViewById(R.id.radioButton1);
+        radioButton2 = findViewById(R.id.radioButton2);
+        radioButton3 = findViewById(R.id.radioButton3);
+        radioButton4 = findViewById(R.id.radioButton4);
+        radioButton5 = findViewById(R.id.radioButton5);
+        radioButton6 = findViewById(R.id.radioButton6);
+        editText1 = findViewById(R.id.editText1);
+        editText2 = findViewById(R.id.editText2);
+        resetButton = findViewById(R.id.resetButton);
+        submitButton = findViewById(R.id.submit_button);
     }
 
-    public void checkBox1Clicked(View view) {
+
+
+
+    protected void checkBox1Clicked(View view) {
         //Will check if this checkbox is checked and incorrect.
         //Shows if the user selected incorrect answer "a) 1980".
         //It will also show a red pop up box with toast message incorrect .
@@ -66,13 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    private void displayForCheckBox1() {
 
-        TextView scoreView = findViewById(R.id.checkBox2);
-        scoreView.setText(String.valueOf(0));
-    }
 
-       public void checkBox2Clicked(View v) {
+      protected void checkBox2Clicked(View v) {
         //Will check if this checkbox is checked and incorrect.
         //Shows if the user selected correct answer "b) 1970".
         //It will also show a red pop up box with toast message incorrect .
@@ -86,12 +103,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void displayForCheckBox2() {
-        TextView scoreView = findViewById(R.id.checkBox2);
-        scoreView.setText(String.valueOf(0));
-    }
 
-    public void checkBox3Clicked(View v) {
+
+   protected void checkBox3Clicked(View v) {
         //Will check if this checkbox is checked and correct will give a point.
         //Shows if the user selected correct answer "c) 1960".
         //It will also show a green pop up box with toast message correct .
@@ -105,12 +119,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void displayForCheckBox3() {
-        TextView scoreView = findViewById(R.id.checkBox3);
-        scoreView.setText(String.valueOf(0));
-    }
 
-    public void radioButton1Clicked(View view) {
+    protected void radioButton1Clicked(View view) {
         //Will check if this radiobutton is checked.
         //Shows if the user selected the correct answer "a) Snurfer.
         //It will also show a green pop up box with toast message correct .
@@ -124,13 +134,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void displayForRadioButton1() {
-        TextView scoreView = findViewById(R.id.radioButton1);
-        scoreView.setText(String.valueOf(0));
 
-    }
 
-    public void radioButton2Clicked(View view) {
+    protected void radioButton2Clicked(View view) {
         //Will check if this radiobutton is checked and incorrect.
         // Shows if the user selected incorrect answer "b) Skis".
         //It will also show a red pop up box with toast message incorrect .
@@ -145,13 +151,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForRadioButton2() {
-        TextView scoreView = findViewById(R.id.radioButton2);
-        scoreView.setText(String.valueOf(0));
 
-    }
 
-    public void radioButton3Clicked(View v) {
+    protected void radioButton3Clicked(View v) {
         //Will check if this radiobutton is checked and incorrect.
         //Shows if the user selected incorrect answer " c) Monoski".
         //It will also show a red pop up box with toast message incorrect .
@@ -166,15 +168,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForRadioButton3() {
-        TextView scoreView = findViewById(R.id.radioButton3);
-        scoreView.setText(String.valueOf(0));
 
 
-    }
-
-
-    public void checkBox4Clicked(View v) {
+    protected void checkBox4Clicked(View v) {
         // Will Check of this checkbox is checked and incorrect.
         //Shows if the user selected the incorrect  answer "a) Sugarbush Resort"
         //It will also show a red pop up box with toast message incorrect .
@@ -189,15 +185,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void displayForCheckBox4() {
-        TextView scoreView = findViewById(R.id.checkBox4);
-        scoreView.setText(String.valueOf(0));
 
 
-    }
 
 
-    public void checkBox5Clicked(View v) {
+
+    protected void checkBox5Clicked(View v) {
         // Will Check if this checkbox is checked and correct will give one point.
         // shows if the user selected the correct answer " b) Stratton Mountain Resort"
         //It will also show a green pop up box with toast message correct .
@@ -212,11 +205,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForCheckBox5() {
-        TextView scoreView = findViewById(R.id.checkBox5);
-        scoreView.setText(String.valueOf(0));
 
-    }
 
     public void checkBox6Clicked(View v) {
         // Will Check of this checkbox is checked and incorrect.
@@ -232,14 +221,11 @@ public class MainActivity extends AppCompatActivity {
 }
     }
 
-    private void displayForCheckBox6() {
-        TextView scoreView = findViewById(R.id.checkBox6);
-        scoreView.setText(String.valueOf(0));
 
 
-    }
 
-    public void radioButton4Clicked(View v) {
+
+    protected void radioButton4Clicked(View v) {
         //Will check if this radiobutton is checked and incorrect.
         // Shows if the user selected incorrect "a) 5 "
         //It will also show a red pop up box with toast message incorrect .
@@ -252,15 +238,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-    }
-
-    private void displayForRadioButton4() {
-        TextView scoreView = findViewById(R.id.radioButton4);
-        scoreView.setText(String.valueOf(0));
 
     }
 
-    public void radioButton5Clicked(View v) {
+    protected void radioButton5Clicked(View v) {
         //Will check if this radiobutton is checked and correct will give one point.
         // Shows if the user selected correct "b) 6 "
         //It will also show a green pop up box with toast message correct .
@@ -272,15 +253,10 @@ public class MainActivity extends AppCompatActivity {
             displayScore(count);
             correctToast();
         }
-    }
-
-    private void displayForRadioButton5() {
-        TextView scoreView = findViewById(R.id.radioButton5);
-        scoreView.setText(String.valueOf(0));
 
     }
 
-    public void radioButton6Clicked(View v) {
+    protected void radioButton6Clicked(View v) {
         //Will check if this radiobutton is checked and incorrect.
         // Shows if the user selected incorrect "c) 7 "
         //It will also show a red pop up box with toast message incorrect .
@@ -294,18 +270,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void displayForRadioButton6() {
-        TextView scoreView = findViewById(R.id.radioButton6);
-        scoreView.setText(String.valueOf(0));
 
-
-    }
 
     /**
      * This will show if the user answered correctly "Japan" and give +1 point or deduct 1 point if incorrect. It will also show a red pop
      * up box with toast message incorrect or green pop up with toast message correct.
      */
-    public void editText1(View view) {
+    public void editText1(View v) {
         // Will check if the editText1 is "Japan" the correct answer and give one point.
         String correctAnswer = "Japan";
         EditText quantityCorrect = findViewById(R.id.editText1);
@@ -328,20 +299,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForEditText1() {
-        TextView scoreView = findViewById(R.id.editText1);
-        scoreView.setText(String.valueOf(0));
-
-
-
-    }
 
     /**
      * This will show if the user answered correctly "Sherman Poppen" and give +1 point or deduct 1 point if incorrect. It will also show a red pop
      * up box with toast message incorrect or green pop up with toast message correct.
      */
 
-    public void editText2(View view) {
+    public void editText2(View v) {
         String correctAnswer = "Sherman Poppen";
         EditText quantityCorrect = findViewById(R.id.editText2);
         if (quantityCorrect.getText().toString().trim().equalsIgnoreCase(correctAnswer)) {
@@ -363,49 +327,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void displayForEditText2() {
-        TextView scoreView = findViewById(R.id.editText2);
-        scoreView.setText(String.valueOf(0));
 
-    }
 
-    public void score(View view) {
-
-        scoreCheckBox1 = 0;
-        scoreCheckBox2 = 0;
-        scoreCheckBox3 = 0;
-        scoreCheckBox4 = 0;
-        scoreCheckBox5 = 0;
-        scoreCheckBox6 = 0;
-        scoreRadioButton1 = 0;
-        scoreRadioButton2 = 0;
-        scoreRadioButton3 = 0;
-        scoreRadioButton4 = 0;
-        scoreRadioButton5 = 0;
-        scoreRadioButton6 = 0;
-        scoreEditText1 = 0;
-        scoreEditText2 = 0;
-        displayForCheckBox1();
-        displayForCheckBox2();
-        displayForCheckBox3();
-        displayForCheckBox4();
-        displayForCheckBox5();
-        displayForCheckBox6();
-        displayForRadioButton1();
-        displayForRadioButton2();
-        displayForRadioButton3();
-        displayForRadioButton4();
-        displayForRadioButton5();
-        displayForRadioButton6();
-        displayForEditText1();
-        displayForEditText2();
-
-    }
 
     /**
      * This is a custom toast message, a green pop up box with a correct message.
      */
-    private void correctToast() {
+    protected void correctToast() {
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
 
@@ -425,7 +353,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This is a custom toast message, a red pop up box with an incorrect message
      */
-    private void incorrectToast() {
+    protected void incorrectToast() {
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER, 0, 0);
 
@@ -444,7 +372,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void displayScore(int numberOfCorrect) {
+    protected void displayScore(int numberOfCorrect) {
         TextView quantityTextView = findViewById(R.id.score_text_view);
         quantityTextView.setText("" + numberOfCorrect);
 
@@ -462,7 +390,7 @@ public class MainActivity extends AppCompatActivity {
                 .getLaunchIntentForPackage(getBaseContext().getPackageName());
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
-        Button button = findViewById(R.id.resetButton);
+
 
     }
 
@@ -471,7 +399,6 @@ public class MainActivity extends AppCompatActivity {
      **/
 
     public void submit(View view) {
-        Button submitButton = findViewById(R.id.submit_button);
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_SUBJECT, "Your total score " + count + " points" + "\n The list below are the correct answers.  " + "\n  1) 1960 " +
