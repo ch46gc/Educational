@@ -37,5 +37,6 @@
     <string name="question_6_text">6) How many layers make up a snowboard construction sandwich?</string>
     <string name="correct_toast">Correct</string>
     <string name="incorrect_toast">Incorrect</string>
+    <string name="name_field">Name</string>
 
 </resources>
