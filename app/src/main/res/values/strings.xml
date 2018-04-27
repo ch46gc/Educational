@@ -1,42 +1,29 @@
 <resources>
     <string name="app_name">Educational</string>
-    <string name="a_1980">a) 1980</string>
+    <string name="question_1_text">1) Which of these are snowboard profiles?</string>
+    <string name="question_2_text">2) Which of these are a predecessor of the snowboard?</string>
+    <string name="question_3_text">3) The 1998 winter olympics were the first to include snowboarding
+        what country were they held in?</string>
+    <string name="country">Country</string>
+    <string name="name">Name</string>
+    <string name="question_4_text">4) Of the names listed below, which are U.S Olympic Gold
+        medalists in snowboarding?</string>
+    <string name="question_5_text">5) Who was the father of snowboarding?</string>
+    <string name="question_6_text">6) Snowboarding was banned until the early 1980\'s at resorts.
+        Which of these opened its slopes up to snowboarding in 1983 – 1984 ?</string>
+    <string name="checkBox1">a) Rocker</string>
+    <string name="checkBox2">b) Gradle</string>
+    <string name="checkBox3">c) Camber</string>
+    <string name="checkBox4">a) Lindsey Jacobellis</string>
+    <string name="checkBox5">b) Sage Kotsenburg</string>
+    <string name="checkBox6">c) Jamie Anderson</string>
+    <string name="radioButton1">a) Snurfer</string>
+    <string name="radioButton2">b) Skis</string>
+    <string name="radioButton3">c) Monoski</string>
+    <string name="radioButton4">a) SugarBush Resort</string>
+    <string name="radioButton5">b) Stratton Mountain Resort </string>
+    <string name="radioButton6">c) Squaw Valley Resor</string>
+    <string name="reset">Reset</string>
     <string name="score">Score</string>
     <string name="submit">Submit</string>
-    <string name="name">Text to display</string>
-    <string name="checkBox1">Answer checkBox1</string>
-    <string name="checkBox2">Answer checkBox2</string>
-    <string name="checkBox3">Answer checkBox3</string>
-    <string name="checkBox4">Answer checkBox4</string>
-    <string name="checkBo5">Answer checkBox5</string>
-    <string name="checkBox6">Answer checkBox6</string>
-    <string name="radioButton1">Answer radioButton1</string>
-    <string name="radioButton2">Answer radioButton2</string>
-    <string name="radioButton3">Answer radioButton3</string>
-    <string name="radioButton4">Answer radioButton4</string>
-    <string name="radioButton5">Answer radioButton5</string>
-    <string name="radioButton6">Answer radioButton6</string>
-    <string name="c_1960">c) 1960</string>
-    <string name="b_1970">b)1970</string>
-    <string name="a_snurfer">a) Snurfer</string>
-    <string name="b_skis">b) Skis</string>
-    <string name="c_monoski">c) Monoski</string>
-    <string name="a_sugarbush_resort">a) SugarBush Resort</string>
-    <string name="b_stratton_mountain_resort">b) Stratton Mountain Resort</string>
-    <string name="c_squaw_valley_resort">c) Squaw Valley Resort</string>
-    <string name="a_5">a) 5</string>
-    <string name="b_6">b) 6</string>
-    <string name="c_7">c) 7</string>
-    <string name="reset">Reset</string>
-    <string name="question_1_text">1) What year was snowboarding invented?</string>
-    <string name="question_2_text">2) Which of these are a predecessor of the snowboard?</string>
-    <string name="question_3_text">3)The 1998 winter olympics were the first to include snowboarding what country were they held in?</string>
-    <string name="country">Country</string>
-    <string name="question_4_text">4) Snowboarding was banned until the early 1980\'s at resorts. Which of these opened its slopes up to snowboarding in 1983 – 1984 ?</string>
-    <string name="question_5_text">5) Who was the father of snowboarding?</string>
-    <string name="question_6_text">6) How many layers make up a snowboard construction sandwich?</string>
-    <string name="correct_toast">Correct</string>
-    <string name="incorrect_toast">Incorrect</string>
-    <string name="name_field">Name</string>
-
 </resources>
