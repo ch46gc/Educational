@@ -2,14 +2,12 @@
     <string name="app_name">Educational</string>
     <string name="question_1_text">1) Which of these are snowboard profiles?</string>
     <string name="question_2_text">2) Which of these are a predecessor of the snowboard?</string>
-    <string name="question_3_text">3) The 1998 winter olympics were the first to include snowboarding
-        what country were they held in?</string>
     <string name="country">Country</string>
     <string name="name">Name</string>
-    <string name="question_4_text">4) Of the names listed below, which are U.S Olympic Gold
+    <string name="question_3_text">3) Of the names listed below, which are U.S Olympic Gold
         medalists in snowboarding?</string>
-    <string name="question_5_text">5) Who was the father of snowboarding?</string>
-    <string name="question_6_text">6) Snowboarding was banned until the early 1980\'s at resorts.
+    <string name="question_4_text">4) Who was the father of snowboarding?</string>
+    <string name="question_5_text">5) Snowboarding was banned until the early 1980\'s at resorts.
         Which of these opened its slopes up to snowboarding in 1983 – 1984 ?</string>
     <string name="checkBox1">a) Rocker</string>
     <string name="checkBox2">b) Gradle</string>
@@ -22,7 +20,7 @@
     <string name="radioButton3">c) Monoski</string>
     <string name="radioButton4">a) SugarBush Resort</string>
     <string name="radioButton5">b) Stratton Mountain Resort </string>
-    <string name="radioButton6">c) Squaw Valley Resor</string>
+    <string name="radioButton6">c) Squaw Valley Resort</string>
     <string name="reset">Reset</string>
     <string name="score">Score</string>
     <string name="submit">Submit</string>
