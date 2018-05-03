@@ -1,7 +1,7 @@
 # Educational
  Project Snowboard Quiz app
 
-This is the final project for the Udacity  Grow With Google Nanodegree: Android Basics.
+This  project is for the Udacity  Grow With Google Nanodegree: Android Basics.
 
 It is a Quiz App, that has the main task to test your android knowledge,  covering the topics studied during the course.
 
