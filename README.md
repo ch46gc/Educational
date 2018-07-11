@@ -1,10 +1,21 @@
-# Educational
- Project Snowboard Quiz app
+# Project Snowboard Quiz app 
+- This  project is for the Udacity  Grow With Google Nanodegree: Android Basics.
+- https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803
 
-This  project is for the Udacity  Grow With Google Nanodegree: Android Basics.
+## The app includes the following :
+- TextView
+- ImageView
+- Button
+- Checkbox
+- EditText
+- LinearLayout
+- ScrollView
+- RadioButton
+- RadioGroup
+- OnTextChangedListener
 
-It is a Quiz App, that has the main task to test your android knowledge,  covering the topics studied during the course.
+# Description 
+ - It is a Quiz App, that has the main task to test your android knowledge,  covering the topics studied during the course.
+ - It contains a series of questions pertaining to snowboarding and it's history.
 
-The app includes at least four of the following Views: TextView, ImageView, Button, Checkbox, EditText, LinearLayout,
- ScrollView, RadioButton, RadioGroup.
- This app also includes an OnTextChangedListener.
+
