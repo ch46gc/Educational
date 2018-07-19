@@ -1,6 +1,6 @@
 # Project Snowboard Quiz app 
-- This  project is for the Udacity's Android Basics Nanodegree by Google: 
-- [Android Basics by Google](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803)
+- This project is for the Udacity's Android Basics Nanodegree part of the Google Developer Scholarship program: 
+- [Android Basics Nanodegree](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803)
 
 ## The app includes the following :
 - TextView
